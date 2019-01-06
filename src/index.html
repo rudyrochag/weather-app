@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+</head>
+<body>
+	<main class="container p-4">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 mx-auto text-center">
+				<div class="card">
+					<div class="list-group">
+						<div class="list-group-item">
+							<strong>Exercice about a Weather App</strong>
+							<span class="span-block">Using Webpack, Javascript+ES6 and <a target="_blank" href="https://openweathermap.org/api">API for get weather</a>.</span>
+						</div>
+						<div class="list-group-item">
+							Rudy Rocha &middot; <a target="_blank" href="https://about.me/rudyrocha">about.me</a>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="card">
+					<div class="list-group">
+						<div class="list-group-item">
+							<h1 id="weather-location" class="h3"></h1>
+							<h3 id="weather-description" class="h4"></h3>
+							<h3 id="weather-string"></h3>
+						</div>
+						<li class="list-group-item" id="weather-humidity"></li>
+						<li class="list-group-item" id="weather-wind"></li>
+					</div>
+				</div>
+				<hr />
+				<div class="card">
+					<div class="card-body">
+						<form id="w-form">
+							<div class="form-group">
+								<select id="city" class="form-control">
+									<option value="Monterrey,mx">Monterrey, Mexico</option>
+									<option value="New York,us">New York, USA</option>
+									<option value="Guadalajara,mx">Guadalajara, Mexico</option>
+									<option value="Seattle,us">Seattle, USA</option>
+								</select>
+							</div>
+							<div class="form-group">
+							</div>
+							<div class="form-group">
+								<button class="btn btn-dark btn-block" id="w-change-btn">
+									Get Weather								
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
